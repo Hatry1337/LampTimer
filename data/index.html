@@ -4,11 +4,13 @@
         <script src="./main.js"></script>
     </head>
     <body>
-        <button onclick="connect()">Connect</button>
+        <span>Lamp State: <span id="lamp_state">OFF</span></span>
+        <button id="state_btn" onclick="ch_state()">Enable</button>
         <p></p>
-        <input id="text_input" placeholder="Text to send" type="text">
+        <input id="text_input" placeholder="Set timer (1d2h3m4s)" type="text">
+        <button onclick="set_timer()">Set</button>
+        <button onclick="clr_timer()">Clear</button>
         <p></p>
-        <input id="repeat_input" placeholder="Repeats" type="number">
-        <button onclick="sendmessage()">Send</button>
+        <span>Time remaining: <span id="time_remaining">0</span></span>
     </body>
 </html>
